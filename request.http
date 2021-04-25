@@ -1,0 +1,20 @@
+POST http://127.0.0.1:8080/formations HTTP/1.1
+content-type: application/json
+
+{
+    "organization":"Webforce3",
+    "price":4470,
+	"name": "Formation développeur web et mobile",
+	"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, similique nisi reprehenderit incidunt facilis quasi repellat, eveniet, nostrum dicta voluptatum quaerat quibusdam? Amet, porro ex repellat numquam officiis delectus pariatur sint deserunt deleniti asperiores temporibus dolorum voluptates ducimus neque saepe consequuntur atque magnam nobis totam. Accusamus accusantium velit dolor dicta doloribus, quasi tempore fugit id nihil suscipit atque, sequi voluptatum impedit reiciendis excepturi eos. Molestiae non, laborum pariatur voluptatibus perferendis saepe quaerat in provident. In obcaecati labore explicabo vitae porro aliquid odio magnam repudiandae? A itaque consequatur voluptatum et dolor qui ipsum incidunt sunt hic unde vitae maxime, nostrum temporibus.",
+    "duration":420,
+    "tags":["frontend","backend","fullstack","mobile"]
+}
+###
+//get all 
+GET http://127.0.0.1:8080/formations HTTP/1.1
+###
+GET http://127.0.0.1:8080/formations/608595c37b25a144c023ed9f HTTP/1.1
+
+###
+DELETE http://127.0.0.1:8080/formations/60858d6bc860a01884c7788b HTTP/1.1
+content-type:application/json
